@@ -79,6 +79,7 @@
             this.blogon.TabIndex = 4;
             this.blogon.Text = "Logon";
             this.blogon.UseVisualStyleBackColor = true;
+            this.blogon.Click += new System.EventHandler(this.blogon_Click);
             // 
             // bcancelar
             // 

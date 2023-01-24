@@ -88,14 +88,14 @@
             // logonToolStripMenuItem
             // 
             this.logonToolStripMenuItem.Name = "logonToolStripMenuItem";
-            this.logonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logonToolStripMenuItem.Text = "Logon";
             this.logonToolStripMenuItem.Click += new System.EventHandler(this.logonToolStripMenuItem_Click);
             // 
             // logoffToolStripMenuItem
             // 
             this.logoffToolStripMenuItem.Name = "logoffToolStripMenuItem";
-            this.logoffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoffToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logoffToolStripMenuItem.Text = "Logoff";
             // 
             // usuáriosToolStripMenuItem
@@ -112,24 +112,24 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // gerenciamenToolStripMenuItem
             // 
             this.gerenciamenToolStripMenuItem.Name = "gerenciamenToolStripMenuItem";
-            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.gerenciamenToolStripMenuItem.Text = "Gerenciamento";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
             // 
             // visualizarToolStripMenuItem
             // 
             this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.visualizarToolStripMenuItem.Text = "Visualizar";
             // 
             // alunosToolStripMenuItem
@@ -226,11 +226,14 @@
             // 
             // pb_login
             // 
+            this.pb_login.Image = global::Projeto_Escola.Properties.Resources.Circulo_vermelho;
             this.pb_login.Location = new System.Drawing.Point(3, 3);
             this.pb_login.Name = "pb_login";
             this.pb_login.Size = new System.Drawing.Size(25, 25);
+            this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_login.TabIndex = 0;
             this.pb_login.TabStop = false;
+            this.pb_login.Click += new System.EventHandler(this.pb_login_Click);
             // 
             // Fescola
             // 
@@ -272,11 +275,11 @@
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lb_nivel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lb_user;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pb_login;
+        public System.Windows.Forms.Label lb_nivel;
+        public System.Windows.Forms.Label lb_user;
+        public System.Windows.Forms.PictureBox pb_login;
     }
 }
 
