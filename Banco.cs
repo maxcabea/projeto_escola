@@ -86,6 +86,57 @@ namespace Projeto_Escola
                 throw ex;
             }
         }
+        public static void NovoUser(Usuario user)
+        {
+            if (UsernameExiste(user) == true)
+            {
+                MessageBox.Show("Usuário já existe no sistema");
+                return;
+            }
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "INSERT INTO tb_usuarios (nm_usuario, login_usuario, senha_usuario, status_usuario, nivel_usuario) VALUES (@nome, @username, @senha, @status, @nivel)";
+
+                cmd.Parameters.AddWithValue("@nome", user.nm_usuario);
+                cmd.Parameters.AddWithValue("@username", user.login_usuario);
+                cmd.Parameters.AddWithValue("@senha", user.senha_usuario);
+                cmd.Parameters.AddWithValue("@status", user.status_usuario);
+                cmd.Parameters.AddWithValue("@nivel", user.nivel_usuario);
+
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                MessageBox.Show("Novo usuário adicionado com sucesso");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao inserir novo .: " + ex.Message);
+            }
+        }
+        public static bool UsernameExiste(Usuario user)
+        {
+            bool resposta;
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            var vcon = ConectarBanco();
+            var cmd = vcon.CreateCommand();
+            cmd.CommandText = "SELECT login_usuario FROM tb_usuarios WHERE login_usuario='" + user.login_usuario + "'";
+            da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+            da.Fill(dt);
+            if (dt.Rows.Count > 0 )
+            {
+                resposta = true;
+            }
+            else
+            {
+                resposta = false;
+            }
+            vcon.Close();
+            return resposta;
+        }
     }
 
 }
