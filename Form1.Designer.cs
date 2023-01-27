@@ -50,6 +50,9 @@
             this.lb_user = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_login = new System.Windows.Forms.PictureBox();
+            this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerenciarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
@@ -69,7 +72,8 @@
             this.loginToolStripMenuItem,
             this.usuáriosToolStripMenuItem,
             this.alunosToolStripMenuItem,
-            this.cursosToolStripMenuItem});
+            this.cursosToolStripMenuItem,
+            this.professorToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -88,14 +92,14 @@
             // logonToolStripMenuItem
             // 
             this.logonToolStripMenuItem.Name = "logonToolStripMenuItem";
-            this.logonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logonToolStripMenuItem.Text = "Logon";
             this.logonToolStripMenuItem.Click += new System.EventHandler(this.logonToolStripMenuItem_Click);
             // 
             // logoffToolStripMenuItem
             // 
             this.logoffToolStripMenuItem.Name = "logoffToolStripMenuItem";
-            this.logoffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoffToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logoffToolStripMenuItem.Text = "Logoff";
             // 
             // usuáriosToolStripMenuItem
@@ -112,25 +116,25 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // gerenciamenToolStripMenuItem
             // 
             this.gerenciamenToolStripMenuItem.Name = "gerenciamenToolStripMenuItem";
-            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.gerenciamenToolStripMenuItem.Text = "Gerenciamento";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
             // 
             // visualizarToolStripMenuItem
             // 
             this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.visualizarToolStripMenuItem.Text = "Visualizar";
             // 
             // alunosToolStripMenuItem
@@ -147,6 +151,7 @@
             this.novoToolStripMenuItem2.Name = "novoToolStripMenuItem2";
             this.novoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem2.Text = "Novo";
+            this.novoToolStripMenuItem2.Click += new System.EventHandler(this.novoToolStripMenuItem2_Click);
             // 
             // gerenciarToolStripMenuItem1
             // 
@@ -166,13 +171,14 @@
             // novoToolStripMenuItem1
             // 
             this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
-            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem1.Text = "Novo";
+            this.novoToolStripMenuItem1.Click += new System.EventHandler(this.novoToolStripMenuItem1_Click);
             // 
             // gerenciarToolStripMenuItem
             // 
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gerenciarToolStripMenuItem.Text = "Gerenciar";
             // 
             // panel1
@@ -236,6 +242,28 @@
             this.pb_login.TabStop = false;
             this.pb_login.Click += new System.EventHandler(this.pb_login_Click);
             // 
+            // professorToolStripMenuItem
+            // 
+            this.professorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem3,
+            this.gerenciarToolStripMenuItem2});
+            this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.professorToolStripMenuItem.Text = "Professor";
+            // 
+            // novoToolStripMenuItem3
+            // 
+            this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem3.Text = "Novo";
+            this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
+            // 
+            // gerenciarToolStripMenuItem2
+            // 
+            this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
+            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem2.Text = "Gerenciar";
+            // 
             // Fescola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +309,9 @@
         public System.Windows.Forms.Label lb_nivel;
         public System.Windows.Forms.Label lb_user;
         public System.Windows.Forms.PictureBox pb_login;
+        private System.Windows.Forms.ToolStripMenuItem professorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem2;
     }
 }
 

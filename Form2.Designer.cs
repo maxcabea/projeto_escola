@@ -43,6 +43,7 @@
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.Size = new System.Drawing.Size(289, 29);
             this.tbusuario.TabIndex = 0;
+            this.tbusuario.Text = "max";
             // 
             // tbsenha
             // 
@@ -52,6 +53,7 @@
             this.tbsenha.PasswordChar = '*';
             this.tbsenha.Size = new System.Drawing.Size(289, 29);
             this.tbsenha.TabIndex = 1;
+            this.tbsenha.Text = "123";
             // 
             // label1
             // 

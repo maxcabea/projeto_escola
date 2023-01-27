@@ -35,5 +35,23 @@ namespace Projeto_Escola
             F_novo_user tela_novo_user = new F_novo_user();
             tela_novo_user.ShowDialog();
         }
+
+        private void novoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            F_aluno tela_novo_aluno = new F_aluno();
+            tela_novo_aluno.ShowDialog();
+        }
+
+        private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            F_novo_curso tela_novo_curso = new F_novo_curso();
+            tela_novo_curso.ShowDialog();
+        }
+
+        private void novoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            F_novo_professor tela_novo_professor = new F_novo_professor();
+            tela_novo_professor.ShowDialog();
+        }
     }
 }

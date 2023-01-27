@@ -20,3 +20,6 @@ C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.cs
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.Fescola.resources
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.Flogin.resources
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_novo_user.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_novo_curso.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_novo_professor.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_aluno.resources
