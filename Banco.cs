@@ -282,5 +282,24 @@ namespace Projeto_Escola
             vcon.Close();
             return resposta;
         }
+        public static DataTable ObterUserID()
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT id_usuario AS ID,nm_usuario AS Nome FROM tb_usuarios";
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

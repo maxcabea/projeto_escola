@@ -53,5 +53,11 @@ namespace Projeto_Escola
             F_novo_professor tela_novo_professor = new F_novo_professor();
             tela_novo_professor.ShowDialog();
         }
+
+        private void gerenciamenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_geren_user tela_geren_user = new F_geren_user();
+            tela_geren_user.ShowDialog();
+        }
     }
 }

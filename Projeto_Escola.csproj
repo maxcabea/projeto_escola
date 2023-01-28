@@ -86,6 +86,12 @@
     <Compile Include="F_aluno.Designer.cs">
       <DependentUpon>F_aluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_geren_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_geren_user.Designer.cs">
+      <DependentUpon>F_geren_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_novo_curso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_aluno.resx">
       <DependentUpon>F_aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_geren_user.resx">
+      <DependentUpon>F_geren_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_novo_curso.resx">
       <DependentUpon>F_novo_curso.cs</DependentUpon>

@@ -44,15 +44,15 @@
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerenciarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_nivel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_user = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_login = new System.Windows.Forms.PictureBox();
-            this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gerenciarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
@@ -116,25 +116,26 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // gerenciamenToolStripMenuItem
             // 
             this.gerenciamenToolStripMenuItem.Name = "gerenciamenToolStripMenuItem";
-            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.gerenciamenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gerenciamenToolStripMenuItem.Text = "Gerenciamento";
+            this.gerenciamenToolStripMenuItem.Click += new System.EventHandler(this.gerenciamenToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // visualizarToolStripMenuItem
             // 
             this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.visualizarToolStripMenuItem.Text = "Visualizar";
             // 
             // alunosToolStripMenuItem
@@ -149,14 +150,14 @@
             // novoToolStripMenuItem2
             // 
             this.novoToolStripMenuItem2.Name = "novoToolStripMenuItem2";
-            this.novoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.novoToolStripMenuItem2.Text = "Novo";
             this.novoToolStripMenuItem2.Click += new System.EventHandler(this.novoToolStripMenuItem2_Click);
             // 
             // gerenciarToolStripMenuItem1
             // 
             this.gerenciarToolStripMenuItem1.Name = "gerenciarToolStripMenuItem1";
-            this.gerenciarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.gerenciarToolStripMenuItem1.Text = "Gerenciar";
             // 
             // cursosToolStripMenuItem
@@ -171,15 +172,37 @@
             // novoToolStripMenuItem1
             // 
             this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
-            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.novoToolStripMenuItem1.Text = "Novo";
             this.novoToolStripMenuItem1.Click += new System.EventHandler(this.novoToolStripMenuItem1_Click);
             // 
             // gerenciarToolStripMenuItem
             // 
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.gerenciarToolStripMenuItem.Text = "Gerenciar";
+            // 
+            // professorToolStripMenuItem
+            // 
+            this.professorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem3,
+            this.gerenciarToolStripMenuItem2});
+            this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.professorToolStripMenuItem.Text = "Professor";
+            // 
+            // novoToolStripMenuItem3
+            // 
+            this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
+            this.novoToolStripMenuItem3.Text = "Novo";
+            this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
+            // 
+            // gerenciarToolStripMenuItem2
+            // 
+            this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
+            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.gerenciarToolStripMenuItem2.Text = "Gerenciar";
             // 
             // panel1
             // 
@@ -241,28 +264,6 @@
             this.pb_login.TabIndex = 0;
             this.pb_login.TabStop = false;
             this.pb_login.Click += new System.EventHandler(this.pb_login_Click);
-            // 
-            // professorToolStripMenuItem
-            // 
-            this.professorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoToolStripMenuItem3,
-            this.gerenciarToolStripMenuItem2});
-            this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.professorToolStripMenuItem.Text = "Professor";
-            // 
-            // novoToolStripMenuItem3
-            // 
-            this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
-            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.novoToolStripMenuItem3.Text = "Novo";
-            this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
-            // 
-            // gerenciarToolStripMenuItem2
-            // 
-            this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
-            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.gerenciarToolStripMenuItem2.Text = "Gerenciar";
             // 
             // Fescola
             // 
