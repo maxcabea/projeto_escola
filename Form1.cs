@@ -32,8 +32,19 @@ namespace Projeto_Escola
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_novo_user tela_novo_user = new F_novo_user();
-            tela_novo_user.ShowDialog();
+            if (Globais.logado)
+            {
+                if (Globais.nivel >= 2)
+                {
+                    F_novo_user tela_novo_user = new F_novo_user();
+                    tela_novo_user.ShowDialog();
+                }
+                else { MessageBox.Show("Nível de acesso não permitido"); }
+            }
+            else 
+            { 
+                MessageBox.Show("É necessário logar no sistema "); 
+            }
         }
 
         private void novoToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -58,6 +69,19 @@ namespace Projeto_Escola
         {
             F_geren_user tela_geren_user = new F_geren_user();
             tela_geren_user.ShowDialog();
+        }
+
+        private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Tem certeza que desaja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes);
+            {
+                lb_nivel.Text = "--";
+                lb_user.Text = "--";
+                pb_login.Image = Properties.Resources.Circulo_vermelho;
+                Globais.nivel = 0;
+                Globais.logado = false;
+            }
+            
         }
     }
 }

@@ -73,6 +73,7 @@
             this.b_atualizar.TabIndex = 27;
             this.b_atualizar.Text = "Atualizar";
             this.b_atualizar.UseVisualStyleBackColor = true;
+            this.b_atualizar.Click += new System.EventHandler(this.b_atualizar_Click);
             // 
             // b_limpar
             // 
@@ -203,6 +204,7 @@
             this.b_excluir.TabIndex = 30;
             this.b_excluir.Text = "Excluir";
             this.b_excluir.UseVisualStyleBackColor = true;
+            this.b_excluir.Click += new System.EventHandler(this.b_excluir_Click);
             // 
             // b_fechar
             // 
@@ -221,6 +223,7 @@
             this.dgv_usuario.AllowUserToAddRows = false;
             this.dgv_usuario.AllowUserToDeleteRows = false;
             this.dgv_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_usuario.ColumnHeadersVisible = false;
             this.dgv_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_usuario.EnableHeadersVisualStyles = false;
             this.dgv_usuario.Location = new System.Drawing.Point(384, 39);
