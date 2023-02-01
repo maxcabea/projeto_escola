@@ -83,5 +83,22 @@ namespace Projeto_Escola
             }
             
         }
+
+        private void tToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gerenciarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            F_geren_aluno tela_geren_alun = new F_geren_aluno();
+            tela_geren_alun.ShowDialog();
+        }
+
+        private void gerenciarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_geren_curso tela_geren_curs = new F_geren_curso();
+            tela_geren_curs.ShowDialog();
+        }
     }
 }

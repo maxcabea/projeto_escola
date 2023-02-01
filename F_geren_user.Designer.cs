@@ -289,7 +289,7 @@
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.tb_nome);
             this.Name = "F_geren_user";
-            this.Text = "F_geren_user";
+            this.Text = "Gerenciamento de Usuários";
             this.Load += new System.EventHandler(this.F_geren_user_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nup_nivel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).EndInit();
