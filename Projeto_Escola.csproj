@@ -98,6 +98,18 @@
     <Compile Include="F_geren_curso.Designer.cs">
       <DependentUpon>F_geren_curso.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_geren_horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_geren_horario.Designer.cs">
+      <DependentUpon>F_geren_horario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_geren_professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_geren_professor.Designer.cs">
+      <DependentUpon>F_geren_professor.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_geren_user.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </Compile>
     <Compile Include="F_novo_curso.Designer.cs">
       <DependentUpon>F_novo_curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_novo_horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_novo_horario.Designer.cs">
+      <DependentUpon>F_novo_horario.cs</DependentUpon>
     </Compile>
     <Compile Include="F_novo_professor.cs">
       <SubType>Form</SubType>
@@ -123,6 +141,7 @@
       <DependentUpon>F_novo_user.cs</DependentUpon>
     </Compile>
     <Compile Include="Globais.cs" />
+    <Compile Include="Horario.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,11 +161,20 @@
     <EmbeddedResource Include="F_geren_curso.resx">
       <DependentUpon>F_geren_curso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_geren_horario.resx">
+      <DependentUpon>F_geren_horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_geren_professor.resx">
+      <DependentUpon>F_geren_professor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_geren_user.resx">
       <DependentUpon>F_geren_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_novo_curso.resx">
       <DependentUpon>F_novo_curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_novo_horario.resx">
+      <DependentUpon>F_novo_horario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_novo_professor.resx">
       <DependentUpon>F_novo_professor.cs</DependentUpon>

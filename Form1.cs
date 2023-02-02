@@ -100,5 +100,23 @@ namespace Projeto_Escola
             F_geren_curso tela_geren_curs = new F_geren_curso();
             tela_geren_curs.ShowDialog();
         }
+
+        private void gerenciarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            F_geren_professor tela_geren_prof = new F_geren_professor();
+            tela_geren_prof.ShowDialog();
+        }
+
+        private void novoToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            F_novo_horario tela_novo_horario = new F_novo_horario();
+            tela_novo_horario.ShowDialog();
+        }
+
+        private void gerenciarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            F_geren_horario tela_geren_horario = new F_geren_horario();
+            tela_geren_horario.ShowDialog();
+        }
     }
 }

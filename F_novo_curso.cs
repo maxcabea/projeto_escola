@@ -36,11 +36,11 @@ namespace Projeto_Escola
 
         private void b_salvar_Click(object sender, EventArgs e)
         {
-            Curso curso = new Curso();
-            curso.nm_curso = tb_nome_curso.Text;
-            curso.area_curso = tb_area_curso.Text;
-            curso.status_curso = cb_status_curso.Text;
-            Banco.NovoCurso(curso);
+            Curso curs = new Curso();
+            curs.nm_curso = tb_nome_curso.Text;
+            curs.area_curso = tb_area_curso.Text;
+            curs.status_curso = cb_status_curso.Text;
+            Banco.NovoCurso(curs);
         }
     }
 }

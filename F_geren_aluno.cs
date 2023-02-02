@@ -21,6 +21,7 @@ namespace Projeto_Escola
         {
             F_aluno tela_novo_aluno = new F_aluno();
             tela_novo_aluno.ShowDialog();
+            dgv_aluno.DataSource = Banco.ObterAlunoID();
         }
 
         private void b_limpar_Click(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace Projeto_Escola
             Banco.AtualizarAluno(alun);
 
             dgv_aluno[1, linha].Value = tb_nome_aluno.Text;
-            dgv_aluno[2, linha].Value = tb_sobrenome_aluno.Text;
+            
 
         }
 

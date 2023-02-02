@@ -26,3 +26,6 @@ C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_geren_user.resources
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_geren_aluno.resources
 C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_geren_curso.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_geren_professor.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_novo_horario.resources
+C:\Users\maxwell.lsantos\source\repos\Projeto_Escola\obj\Debug\Projeto_Escola.F_geren_horario.resources

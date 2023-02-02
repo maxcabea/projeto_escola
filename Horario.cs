@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Projeto_Escola
 {
-    internal class Professor
+    internal class Horario
     {
-        public Int32 id_professor;
-        public string nm_professor;
+        public Int32 id_horario;
+        public string descricao_horario;
     }
 }

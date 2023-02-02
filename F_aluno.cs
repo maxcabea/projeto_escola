@@ -31,11 +31,13 @@ namespace Projeto_Escola
 
         private void b_salvar_usuario_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno();
-            aluno.nm_aluno = tb_nome_aluno.Text;
-            aluno.sb_aluno = tb_sobrenome_aluno.Text;
-            aluno.cpf_aluno = tb_cpf_aluno.Text;
-            Banco.NovoAluno(aluno);
+            Aluno alun = new Aluno();
+            alun.nm_aluno = tb_nome_aluno.Text;
+            alun.sb_aluno = tb_sobrenome_aluno.Text;
+            alun.cpf_aluno = tb_cpf_aluno.Text;
+            Banco.NovoAluno(alun);
+
+
         }
     }
 }

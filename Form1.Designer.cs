@@ -46,17 +46,17 @@
             this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lb_nivel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lb_user = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.horáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.turmasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_nivel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lb_user = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pb_login = new System.Windows.Forms.PictureBox();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -174,14 +174,14 @@
             // novoToolStripMenuItem1
             // 
             this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
-            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.novoToolStripMenuItem1.Text = "Novo";
             this.novoToolStripMenuItem1.Click += new System.EventHandler(this.novoToolStripMenuItem1_Click);
             // 
             // gerenciarToolStripMenuItem
             // 
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.gerenciarToolStripMenuItem.Text = "Gerenciar";
             this.gerenciarToolStripMenuItem.Click += new System.EventHandler(this.gerenciarToolStripMenuItem_Click);
             // 
@@ -197,15 +197,60 @@
             // novoToolStripMenuItem3
             // 
             this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
-            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem3.Text = "Novo";
             this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
             // 
             // gerenciarToolStripMenuItem2
             // 
             this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
-            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.gerenciarToolStripMenuItem2.Text = "Gerenciar";
+            this.gerenciarToolStripMenuItem2.Click += new System.EventHandler(this.gerenciarToolStripMenuItem2_Click);
+            // 
+            // horáriosToolStripMenuItem
+            // 
+            this.horáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem4,
+            this.gerenciarToolStripMenuItem3});
+            this.horáriosToolStripMenuItem.Name = "horáriosToolStripMenuItem";
+            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.horáriosToolStripMenuItem.Text = "Horários";
+            // 
+            // novoToolStripMenuItem4
+            // 
+            this.novoToolStripMenuItem4.Name = "novoToolStripMenuItem4";
+            this.novoToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem4.Text = "Novo";
+            this.novoToolStripMenuItem4.Click += new System.EventHandler(this.novoToolStripMenuItem4_Click);
+            // 
+            // gerenciarToolStripMenuItem3
+            // 
+            this.gerenciarToolStripMenuItem3.Name = "gerenciarToolStripMenuItem3";
+            this.gerenciarToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem3.Text = "Gerenciar";
+            this.gerenciarToolStripMenuItem3.Click += new System.EventHandler(this.gerenciarToolStripMenuItem3_Click);
+            // 
+            // turmasToolStripMenuItem
+            // 
+            this.turmasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem5,
+            this.gerenciarToolStripMenuItem4});
+            this.turmasToolStripMenuItem.Name = "turmasToolStripMenuItem";
+            this.turmasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.turmasToolStripMenuItem.Text = "Turmas";
+            // 
+            // novoToolStripMenuItem5
+            // 
+            this.novoToolStripMenuItem5.Name = "novoToolStripMenuItem5";
+            this.novoToolStripMenuItem5.Size = new System.Drawing.Size(124, 22);
+            this.novoToolStripMenuItem5.Text = "Novo";
+            // 
+            // gerenciarToolStripMenuItem4
+            // 
+            this.gerenciarToolStripMenuItem4.Name = "gerenciarToolStripMenuItem4";
+            this.gerenciarToolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
+            this.gerenciarToolStripMenuItem4.Text = "Gerenciar";
             // 
             // panel1
             // 
@@ -256,48 +301,6 @@
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuário.:";
-            // 
-            // horáriosToolStripMenuItem
-            // 
-            this.horáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoToolStripMenuItem4,
-            this.gerenciarToolStripMenuItem3});
-            this.horáriosToolStripMenuItem.Name = "horáriosToolStripMenuItem";
-            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.horáriosToolStripMenuItem.Text = "Horários";
-            // 
-            // novoToolStripMenuItem4
-            // 
-            this.novoToolStripMenuItem4.Name = "novoToolStripMenuItem4";
-            this.novoToolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
-            this.novoToolStripMenuItem4.Text = "Novo";
-            // 
-            // gerenciarToolStripMenuItem3
-            // 
-            this.gerenciarToolStripMenuItem3.Name = "gerenciarToolStripMenuItem3";
-            this.gerenciarToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
-            this.gerenciarToolStripMenuItem3.Text = "Gerenciar";
-            // 
-            // turmasToolStripMenuItem
-            // 
-            this.turmasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoToolStripMenuItem5,
-            this.gerenciarToolStripMenuItem4});
-            this.turmasToolStripMenuItem.Name = "turmasToolStripMenuItem";
-            this.turmasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.turmasToolStripMenuItem.Text = "Turmas";
-            // 
-            // novoToolStripMenuItem5
-            // 
-            this.novoToolStripMenuItem5.Name = "novoToolStripMenuItem5";
-            this.novoToolStripMenuItem5.Size = new System.Drawing.Size(124, 22);
-            this.novoToolStripMenuItem5.Text = "Novo";
-            // 
-            // gerenciarToolStripMenuItem4
-            // 
-            this.gerenciarToolStripMenuItem4.Name = "gerenciarToolStripMenuItem4";
-            this.gerenciarToolStripMenuItem4.Size = new System.Drawing.Size(124, 22);
-            this.gerenciarToolStripMenuItem4.Text = "Gerenciar";
             // 
             // pb_login
             // 

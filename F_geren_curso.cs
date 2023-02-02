@@ -33,6 +33,7 @@ namespace Projeto_Escola
         {
             F_novo_curso tela_novo_curso = new F_novo_curso();
             tela_novo_curso.ShowDialog();
+            dgv_curso.DataSource = Banco.ObterCursoID();
         }
 
         private void F_geren_curso_Load(object sender, EventArgs e)
@@ -58,6 +59,30 @@ namespace Projeto_Escola
                 tb_nome_curso.Text = dt.Rows[0].Field<string>("nm_curso").ToString();
                 tb_area_curso.Text = dt.Rows[0].Field<string>("area_curso").ToString();
                 cb_status_curso.Text = dt.Rows[0].Field<string>("status_curso").ToString();
+            }
+        }
+
+        private void b_atualizar_Click(object sender, EventArgs e)
+        {
+            int linha = dgv_curso.SelectedRows[0].Index;
+
+            Curso curs = new Curso();
+            curs.id_curso = Convert.ToInt32(tb_id_curso.Text);
+            curs.nm_curso = tb_nome_curso.Text;
+            curs.area_curso = tb_area_curso.Text;
+           
+            Banco.AtualizarCurso(curs);
+
+            dgv_curso[1, linha].Value = tb_nome_curso.Text;
+        }
+
+        private void b_excluir_Click(object sender, EventArgs e)
+        {
+            DialogResult resposta = MessageBox.Show("Confirmar Exclusão ? ", "Excluir Nome", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Banco.RemoveCursoId(tb_id_curso.Text);
+                dgv_curso.Rows.Remove(dgv_curso.CurrentRow);
             }
         }
     }
