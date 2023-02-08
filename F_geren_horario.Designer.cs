@@ -145,6 +145,7 @@
             this.b_excluir.TabIndex = 30;
             this.b_excluir.Text = "Excluir";
             this.b_excluir.UseVisualStyleBackColor = true;
+            this.b_excluir.Click += new System.EventHandler(this.b_excluir_Click);
             // 
             // b_limpar
             // 
@@ -168,6 +169,7 @@
             this.b_atualizar.TabIndex = 27;
             this.b_atualizar.Text = "Atualizar";
             this.b_atualizar.UseVisualStyleBackColor = true;
+            this.b_atualizar.Click += new System.EventHandler(this.b_atualizar_Click);
             // 
             // F_geren_horario
             // 

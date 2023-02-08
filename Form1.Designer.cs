@@ -191,20 +191,20 @@
             this.novoToolStripMenuItem3,
             this.gerenciarToolStripMenuItem2});
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.professorToolStripMenuItem.Text = "Professor";
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.professorToolStripMenuItem.Text = "Professores";
             // 
             // novoToolStripMenuItem3
             // 
             this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
-            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
             this.novoToolStripMenuItem3.Text = "Novo";
             this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
             // 
             // gerenciarToolStripMenuItem2
             // 
             this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
-            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.gerenciarToolStripMenuItem2.Text = "Gerenciar";
             this.gerenciarToolStripMenuItem2.Click += new System.EventHandler(this.gerenciarToolStripMenuItem2_Click);
             // 
@@ -323,7 +323,7 @@
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Fescola";
-            this.Text = "Projeto Cadastros";
+            this.Text = "Projeto Escola";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.panel1.ResumeLayout(false);

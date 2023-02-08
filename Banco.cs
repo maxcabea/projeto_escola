@@ -293,7 +293,7 @@ namespace Projeto_Escola
             {
                 var vcon = ConectarBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_horarios (descricao_horario) VALUES (@descricao_horario)";
+                cmd.CommandText = "INSERT INTO tb_horario (descricao_horario) VALUES (@descricao_horario)";
                 cmd.Parameters.AddWithValue("@descricao_horario", hora.descricao_horario);
 
 
@@ -315,7 +315,7 @@ namespace Projeto_Escola
 
             var vcon = ConectarBanco();
             var cmd = vcon.CreateCommand();
-            cmd.CommandText = "SELECT descricao_horario FROM tb_horarios WHERE descricao_horario='" + hora.descricao_horario + "'";
+            cmd.CommandText = "SELECT descricao_horario FROM tb_horario WHERE descricao_horario='" + hora.descricao_horario + "'";
             da = new SQLiteDataAdapter(cmd.CommandText, vcon);
             da.Fill(dt);
             if (dt.Rows.Count > 0)
@@ -641,7 +641,7 @@ namespace Projeto_Escola
             {
                 var vcon = ConectarBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tb_horarios";
+                cmd.CommandText = "SELECT * FROM tb_horario";
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
                 da.Fill(dt);
                 vcon.Close();
@@ -660,11 +660,49 @@ namespace Projeto_Escola
             {
                 var vcon = ConectarBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tb_horarios where id_horario" + id;
+                cmd.CommandText = "SELECT id_horario, descricao_horario FROM tb_horario where id_horario=" + id;
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
                 da.Fill(dt);
                 vcon.Close();
                 return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public static void AtualizarHorario(Horario hor)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE tb_horario SET descricao_horario='" + hor.descricao_horario + "' WHERE id_horario=" + hor.id_horario;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro .: " + ex.Message);
+            }
+        }
+        public static void RemoveHorarioId(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_horario WHERE id_horario=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
             }
             catch (Exception ex)
             {

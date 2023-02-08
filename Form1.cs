@@ -73,7 +73,7 @@ namespace Projeto_Escola
 
         private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Tem certeza que desaja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes);
+            if (MessageBox.Show("Tem certeza que deseja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes);
             {
                 lb_nivel.Text = "--";
                 lb_user.Text = "--";

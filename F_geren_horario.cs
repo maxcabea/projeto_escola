@@ -50,11 +50,34 @@ namespace Projeto_Escola
             {
                 DataTable dt = new DataTable();
 
-                string horaId = dgv.SelectedRows[0].Cells[0].Value.ToString();
-                dt = Banco.ObterDadosHorarioId(horaId);
+                string horId = dgv.SelectedRows[0].Cells[0].Value.ToString();
+                dt = Banco.ObterDadosHorarioId(horId);
 
                 tb_id_horario.Text = dt.Rows[0].Field<Int64>("id_horario").ToString();
                 tb_descr_horario.Text = dt.Rows[0].Field<string>("descricao_horario").ToString();
+            }
+        }
+
+        private void b_atualizar_Click(object sender, EventArgs e)
+        {
+            int linha = dgv_horario.SelectedRows[0].Index;
+
+            Horario hor = new Horario();
+            hor.id_horario = Convert.ToInt32(tb_id_horario.Text);
+            hor.descricao_horario = tb_descr_horario.Text;
+            
+            Banco.AtualizarHorario(hor);
+
+            dgv_horario[1, linha].Value = tb_descr_horario.Text;
+        }
+
+        private void b_excluir_Click(object sender, EventArgs e)
+        {
+            DialogResult resposta = MessageBox.Show("Confirmar Exclusão ? ", "Excluir Nome", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.Yes)
+            {
+                Banco.RemoveHorarioId(tb_id_horario.Text);
+                dgv_horario.Rows.Remove(dgv_horario.CurrentRow);
             }
         }
     }
